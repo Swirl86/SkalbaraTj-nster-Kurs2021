@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "a9aa457c-3dc2-4efc-94de-230ec59e01a0",
+		"name": "Lego Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "proxy-access",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5010/lego/all-lego",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5010",
+					"path": [
+						"lego",
+						"all-lego"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL PROXY",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "proxy-access",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6000/lego/all-lego",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"lego",
+						"all-lego"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL CATEGORY PROXY",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "proxy-access",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6000/lego/all-categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"lego",
+						"all-categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL LEGO RELATED NY CATEGORY PROXY",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Connection",
+						"value": "close",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "proxy-access",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6000/lego/all-lego-by-categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"lego",
+						"all-lego-by-categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET id related",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5020/lego/search-by-id-relation/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5020",
+					"path": [
+						"lego",
+						"search-by-id-relation",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET id related PROXY",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "proxy-access",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6000/lego/search-by-id/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"lego",
+						"search-by-id",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET string match",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5030/lego/search-by-name/star",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5030",
+					"path": [
+						"lego",
+						"search-by-name",
+						"star"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET string match PROXY",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "proxy-access",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6000/lego/search-by-name/Advent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"lego",
+						"search-by-name",
+						"Advent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET category  match PROXY",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "proxy-access",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6000/lego/search-by-category/lego",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"lego",
+						"search-by-category",
+						"lego"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
